@@ -4,7 +4,7 @@
 
 I bridge the gap between hardware, automation, and digital art. My passion lies in building robust Linux infrastructures, automating workflows with GitHub Actions, and exploring the creative potential of Generative AI.
 
-- 🔭 **I’m currently working on:** A custom [Manjaro Awesome Edition](https://github.com/megvadulthangya/iso-profiles) ISO.
+- 🔭 **I’m currently working on:** A custom [Manjaro Awesome Respin](https://github.com/megvadulthangya/iso-profiles) ISO.
 - 🌱 **I’m currently learning:** Advanced LLM RAG pipelines & Stable Diffusion LoRA training.
 - 🐧 **My daily driver:** Manjaro Linux (AwesomeWM + Nord Theme).
 - 📸 **My creative side:** [Links.gshoots.hu](https://links.gshoots.hu)
