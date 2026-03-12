@@ -11,6 +11,8 @@ I bridge the gap between hardware, automation, and digital art. My passion lies 
 
 ---
 
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:5e81ac,100:88c0d0&height=120&section=header&text=Gábor%20-%20Systems%20Architect&fontColor=eceff4&fontSize=30)
+
 ## 📊 GitHub Stats (Nord color scheme)
 
 <p align="center">
@@ -24,7 +26,7 @@ I bridge the gap between hardware, automation, and digital art. My passion lies 
 
 <p align="center">
   <a href="https://github.com/megvadulthangya">
-    <img src="https://github-readme-streak-stats.herokuapp.com?user=megvadulthangya&theme=dark&hide_border=true" width="48%" alt="Streak stats" />
+    <img src="https://github-readme-streak-stats.herokuapp.com?user=megvadulthangya&hide_border=true&background=2e3440&ring=88c0d0&fire=81a1c1&currStreakLabel=88c0d0&sideLabels=d8dee9&currStreakNum=e5e9f0&sideNums=e5e9f0&dates=d8dee9" width="48%" alt="Streak stats" />
   </a>
 </p>
 
@@ -35,6 +37,31 @@ I bridge the gap between hardware, automation, and digital art. My passion lies 
 </p>
 
 <br/>
+
+## 🔥 Extra widgets (Nord-themed)
+
+<p align="center">
+  <!-- Contribution Snake -->
+  <!-- Platane's snake supports a few themes; pass user param. If you'd like different colors, we can swap theme or host a custom svg. -->
+  <img src="https://github.com/Platane/snk/raw/master/snake.svg?user=megvadulthangya&theme=dark" alt="Contribution Snake" width="100%" style="max-width:900px;" />
+</p>
+
+<p align="center">
+  <!-- GitHub Trophies -->
+  <!-- theme param may not include "nord" on all trophy services; we use a dark-ish variant that fits the Nord palette -->
+  <img src="https://github-profile-trophy.vercel.app/?username=megvadulthangya&theme=gruvbox&row=1&column=7" alt="GitHub Trophies" />
+</p>
+
+<p align="center">
+  <!-- Repo / Pinned repo metric card (use github-readme-stats pin endpoint) -->
+  <a href="https://github.com/megvadulthangya/iso-profiles">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=megvadulthangya&repo=iso-profiles&hide_border=true&bg_color=2e3440&title_color=e5e9f0&text_color=d8dee9&icon_color=88c0d0" alt="Repo Card" />
+  </a>
+</p>
+
+> Megjegyzés: néhány külső szolgáltás (`snake.svg`, `github-profile-trophy`) korlátozott témabeállításokkal dolgozik. A fenti beállítások dark/Nord-kompatibilisek, de ha szeretnéd teljesen custom Nord-színekre szabni (pl. minden badge és trophy pontos hex értékeivel), akkor vagy:
+> - generálunk és hostolunk egy egyedi SVG-t (teljes kontroll), vagy
+> - kipróbálunk más `theme` opciókat a szolgáltatásoknál. Szívesen megcsinálom az egyedi SVG-t és feltöltöm a repo-ba, ha kéred.
 
 ---
 
