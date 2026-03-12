@@ -1,4 +1,4 @@
-### Hi there, I'm Gábor! 👋
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:5e81ac,100:88c0d0&height=120&section=header&text=Hi%20there%2C%20I%27m%20G%C3%A1bor!%20%F0%9F%91%8B&fontColor=eceff4&fontSize=30)
 
 **Systems Architect & DevOps Engineer | Visuals & Hardware Specialist**
 
@@ -11,9 +11,7 @@ I bridge the gap between hardware, automation, and digital art. My passion lies 
 
 ---
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:5e81ac,100:88c0d0&height=120&section=header&text=Gábor%20-%20Systems%20Architect&fontColor=eceff4&fontSize=30)
-
-## 📊 GitHub Stats (Nord color scheme)
+## 📊 GitHub Stats
 
 <p align="center">
   <a href="https://github.com/megvadulthangya">
