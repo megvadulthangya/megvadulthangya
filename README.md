@@ -38,26 +38,6 @@ I bridge the gap between hardware, automation, and digital art. My passion lies 
 
 <br/>
 
-## 🐍 Contribution Snake
-
-<p align="center">
-  <!-- A workflownek kell generálnia az SVG-t az `output` branch/be `dist/` mappába -->
-  <img src="https://raw.githubusercontent.com/megvadulthangya/megvadulthangya/output/dist/github-snake-dark.svg" alt="GitHub contribution snake" style="max-width:900px; width:100%;" />
-</p>
-
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=megvadulthangya&theme=nord&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
-</p>
-
-## 📦 Pinned repo / Repo card
-
-<p align="center">
-  <a href="https://github.com/megvadulthangya/iso-profiles">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=megvadulthangya&repo=iso-profiles&hide_border=true&bg_color=2e3440&title_color=e5e9f0&text_color=d8dee9&icon_color=88c0d0" alt="iso-profiles repo card" />
-  </a>
-</p>
 
 ---
 
