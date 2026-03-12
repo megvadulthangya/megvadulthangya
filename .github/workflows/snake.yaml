@@ -1,36 +1,63 @@
-name: generate-snake-and-push
+name: generate-snake-and-publish
+permissions:
+  contents: write
+
 on:
   schedule:
-    - cron: "0 0 * * *"     # naponta egyszer (UTC)
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
   generate-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout repository (with credentials)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
 
-      - name: Generate snake (Platane/snk)
+      - name: Generate contribution snake (Platane/snk)
         uses: Platane/snk@v3
         with:
-          # REQUIRED: GitHub felhasználó (saját profilnál repository_owner jó)
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg?color_snake=%2388c0d0&color_dots=%23e5e9f0,%23d8dee9,%2388c0d0,%2381a1c1,%235e81ac
             dist/github-snake-dark.svg?palette=github-dark&color_snake=%2388c0d0&color_dots=%23e5e9f0,%23d8dee9,%2388c0d0,%2381a1c1,%235e81ac
             dist/ocean.gif?color_snake=%2388c0d0&color_dots=%23e5e9f0,%23d8dee9,%2388c0d0,%2381a1c1,%235e81ac&color_background=%232e3440
 
-      - name: Commit generated files
-        # commitoljuk a dist/ fájlokat egy külön branch-be -> "output"
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: "github-actions[bot]"
-          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
-          message: "chore: update generated contribution snake"
-          add: "dist/*"
-          branch: output
+      - name: Ensure output branch exists (create if missing)
+        run: |
+          git config user.name "github-actions[bot]" || true
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com" || true
+          if git ls-remote --exit-code --heads origin output >/dev/null 2>&1; then
+            echo "output branch exists on remote"
+          else
+            git checkout -b output
+            git push --set-upstream origin output || true
+            git checkout -
+          fi
+
+      - name: Commit generated files to 'output' branch
+        run: |
+          # create a temporary branch from main, add generated files and push to output
+          git fetch origin output:refs/remotes/origin/output || true
+          # create or reset a local working branch from remote output (or from current HEAD if none)
+          if git show-ref --verify --quiet refs/heads/output; then
+            git checkout output
+          else
+            if git ls-remote --exit-code --heads origin output >/dev/null 2>&1; then
+              git checkout -b output origin/output
+            else
+              git checkout -b output
+            fi
+          fi
+          git add -A dist || true
+          if git diff --cached --quiet; then
+            echo "No changes in dist to commit"
+          else
+            git commit -m "chore: update generated contribution snake" || true
+            git push origin output
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
