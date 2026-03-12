@@ -1,0 +1,36 @@
+name: generate-snake-and-push
+on:
+  schedule:
+    - cron: "0 0 * * *"     # naponta egyszer (UTC)
+  workflow_dispatch:
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate snake (Platane/snk)
+        uses: Platane/snk@v3
+        with:
+          # REQUIRED: GitHub felhasználó (saját profilnál repository_owner jó)
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=%2388c0d0&color_dots=%23e5e9f0,%23d8dee9,%2388c0d0,%2381a1c1,%235e81ac
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=%2388c0d0&color_dots=%23e5e9f0,%23d8dee9,%2388c0d0,%2381a1c1,%235e81ac
+            dist/ocean.gif?color_snake=%2388c0d0&color_dots=%23e5e9f0,%23d8dee9,%2388c0d0,%2381a1c1,%235e81ac&color_background=%232e3440
+
+      - name: Commit generated files
+        # commitoljuk a dist/ fájlokat egy külön branch-be -> "output"
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: "github-actions[bot]"
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          message: "chore: update generated contribution snake"
+          add: "dist/*"
+          branch: output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
