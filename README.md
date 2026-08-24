@@ -15,10 +15,10 @@ I bridge the gap between hardware, automation, and digital art. My passion lies 
 
 <p align="center">
   <a href="https://github.com/megvadulthangya">
-    <img height="150px" src="https://github-readme-stats.vercel.app/api?username=megvadulthangya&hide_title=true&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=2e3440&title_color=e5e9f0&text_color=d8dee9&icon_color=88c0d0&border_color=4c566a" alt="GitHub stats" />
+    <img height="150px" src="https://github-readme-stats.vercel.app/api?username=megvadulthangya&hide_title=true&show_icons=true&include_all_commits=true&hide_border=true&bg_color=2e3440&title_color=e5e9f0&text_color=d8dee9&icon_color=88c0d0&border_color=4c566a" alt="GitHub stats" />
   </a>
   <a href="https://github.com/megvadulthangya">
-    <img height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=megvadulthangya&layout=compact&hide_border=true&bg_color=2e3440&title_color=e5e9f0&text_color=d8dee9&icon_color=88c0d0&border_color=4c566a" alt="Top languages" />
+    <img height="150px" src="https://github-readme-stats.vercel.app/api/top-langs?username=megvadulthangya&layout=compact&hide_border=true&bg_color=2e3440&title_color=e5e9f0&text_color=d8dee9&icon_color=88c0d0&border_color=4c566a" alt="Top languages" />
   </a>
 </p>
 
