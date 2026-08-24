@@ -24,7 +24,7 @@ I bridge the gap between hardware, automation, and digital art. My passion lies 
 
 <p align="center">
   <a href="https://github.com/megvadulthangya">
-    <img src="https://github-readme-streak-stats.herokuapp.com?user=megvadulthangya&hide_border=true&background=2e3440&ring=88c0d0&fire=81a1c1&currStreakLabel=88c0d0&sideLabels=d8dee9&currStreakNum=e5e9f0&sideNums=e5e9f0&dates=d8dee9" width="48%" alt="Streak stats" />
+    <img src="https://streak-stats.demolab.com?user=megvadulthangya&hide_border=true&background=2e3440&ring=88c0d0&fire=81a1c1&currStreakLabel=88c0d0&sideLabels=d8dee9&currStreakNum=e5e9f0&sideNums=e5e9f0&dates=d8dee9" width="48%" alt="Streak stats" />
   </a>
 </p>
 
